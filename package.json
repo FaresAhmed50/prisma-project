@@ -5,7 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch index.js"
+    "dev": "node --watch index.js",
+    "prisma:st" : "npx prisma studio",
+    "prisma:f" : "npx prisma format ",
+    "prisma:g" : "npx prisma generate",
+    "prisma:push" : "npx prisma db push"
   },
   "private": true,
   "dependencies": {

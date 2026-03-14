@@ -1,0 +1,8 @@
+model User {
+  userId  String   @id @db.Uuid @default(uuid()) @map("user_id")
+  email   String   @unique
+  name    String
+  profile Profile?
+
+  @@map("users")
+}
